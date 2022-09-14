@@ -1,17 +1,14 @@
 
 import './App.css';
-import {simpsons} from "./data";
-import Simpsons from "./Simpsons";
+
+import RnM from "./RnM";
 
 function App() {
-    let title='Simpsons'
+    let title='Rick and Morty'
     return (
         <div className="App">
             <h2>{title}</h2>
-            {
-                simpsons.map(simpson=> (<Simpsons item={simpson}/>)
-                )
-            }
+            <RnM/>
         </div>
     );
 }
