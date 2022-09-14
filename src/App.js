@@ -1,7 +1,7 @@
 
 import './App.css';
 import {simpsons} from "./data";
-import Simpsons from "./Simpsons";
+import Simpsons from "./components/Simpsons";
 
 function App() {
   let title='Simpsons'
