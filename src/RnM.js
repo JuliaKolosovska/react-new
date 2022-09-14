@@ -7,8 +7,7 @@ let [rnm, setRnm] = useState([]);
         .then(value => value.json())
         .then(value => {
             setRnm(value);
-            console.log(value)
-        })
+                    });
 
     return (
         <div>
