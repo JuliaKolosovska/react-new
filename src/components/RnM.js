@@ -6,7 +6,7 @@ export default function RnM() {
     fetch('https://rickandmortyapi.com/api/character')
         .then(value => value.json())
         .then(value => {
-            setRnm(value);
+            setRnm(value.results);
         });
 
     return (

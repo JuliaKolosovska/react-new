@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import RnM from "./RnM";
+import RnM from "./components/RnM";
 
 function App() {
     let title='Rick and Morty'
