@@ -1,14 +1,13 @@
 
 import './App.css';
 
-import RnM from "./components/RnM";
+import Characters from "./components/Characters";
 
 function App() {
-    let title='Rick and Morty'
-    return (
+        return (
         <div className="App">
-            <h2>{title}</h2>
-            <RnM/>
+
+            <Characters/>
         </div>
     );
 }
