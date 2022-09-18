@@ -1,9 +1,9 @@
 export default function Launch(props) {
-    let {item: launch, lift} = props;
+    let {item: launch} = props;
 
     return (<div>
         <h3>{launch.mission_name}. {launch.launch_year}</h3>
-        <img src={launch.links.mission_patch_small}/>
+        <img src={launch.links.mission_patch_small} alt={launch.mission_name}/>
 
     </div>)
 
