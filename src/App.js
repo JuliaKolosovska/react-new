@@ -1,10 +1,10 @@
-import Users from "./components/Users";
+import Launches from "./components/Launches";
 import './App.css';
 
 function App() {
     return (
         <div className="App">
-            <Users/>
+            <Launches/>
         </div>
     );
 }
