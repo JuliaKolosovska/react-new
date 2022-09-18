@@ -4,8 +4,8 @@ import User from "./User"
 export default function Users() {
     let [users, setUsers] = useState([]);
     let [user, setUser] = useState(null);
-    const lift = (id) => {
-console.log(id);
+    const lift = (obj) => {
+setUser(obj12);
     }
 }
 useEffect(() => {
@@ -22,8 +22,7 @@ return (<div>
     {user && <div> {JSON.stringify(user)}</div>}
     <hr/>
 
-        {users
-            .map((user, index) => (<User
+        {users.map((user, index) => (<User
                 item={user}
                 key={index}
             lift={lift}/>))}
