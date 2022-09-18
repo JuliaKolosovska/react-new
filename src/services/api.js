@@ -7,8 +7,9 @@ headers:{'Content-Type':'application/json'}
 
 const getUsers=()=> {
     return axiosInstance.get()
-}
+};
+
 const getPosts=(id)=>{
-    return axiosInstance.get('/'+id+'posts')}
+    return axiosInstance.get('/'+id+'/posts')}
 
 export {getUsers, getPosts}
