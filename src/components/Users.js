@@ -5,9 +5,9 @@ export default function Users() {
     let [users, setUsers] = useState([]);
     let [user, setUser] = useState(null);
     const lift = (obj) => {
-setUser(obj12);
+setUser(obj);
     }
-}
+
 useEffect(() => {
 
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -27,4 +27,7 @@ return (<div>
                 key={index}
             lift={lift}/>))}
 </div>
-)
+);
+}
+
+

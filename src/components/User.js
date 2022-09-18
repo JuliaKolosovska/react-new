@@ -5,7 +5,7 @@ export default function User(props) {
         <h3>{user.id}. {user.name}</h3>
         <button onClick={() => {
             lift(user.email);
-        }}>Details
+        }}>Show e-mail
         </button>
 
     </div>)
