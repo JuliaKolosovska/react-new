@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
-import User from "./User"
+import User from "../user/User"
+import {getUsers} from "../../services/api";
 
 export default function Users() {
     let [users, setUsers] = useState([]);
@@ -10,11 +11,7 @@ setUser(obj);
 
 useEffect(() => {
 
-    fetch('https://jsonplaceholder.typicode.com/users')
-        .then(value => value.json())
-        .then(value => {
-            setUsers(value);
-        })
+   getUsers().then(value=>setUsers(value.data))
 
 }, []);
 
