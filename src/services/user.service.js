@@ -1,5 +1,5 @@
-import axiosService from "./axios.service";
-import urls from "../cofigs";
+import {axiosService} from "./axios.service";
+import {urls} from "../cofigs";
 
 const userService={
     getAll:()=>axiosService.get(urls.users),
