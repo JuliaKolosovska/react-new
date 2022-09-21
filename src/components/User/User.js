@@ -1,9 +1,11 @@
 import React from 'react';
-import scc from ' './
+import css from './User.module.css';
+
+
 const User = (user) => {
     const {id, name, surname, email, adress, phone, website, company}= user;
     return (
-        <div>
+        <div className={css.User}>
             <div>id:{id}</div>surname
             <div>name:{name}</div>
             <div>surname:{surname}</div>
