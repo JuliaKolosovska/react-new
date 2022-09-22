@@ -1,8 +1,8 @@
 import axios from "axios";
 
-import {baseUrl} from "../cofigs";
+import {baseURL} from "../cofigs";
 
 
-const axiosService=axios.create({baseUrl});
+const axiosService = axios.create({baseURL})
 
 export {axiosService}

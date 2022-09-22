@@ -1,14 +1,20 @@
-import React, {useEffect} from 'react';
-import {userService as userServise} from "../../services";
+import React, {useEffect, useState} from 'react';
+
+
+import {User} from '../User/User';
+import UserForm from '../User.form/UserForm';
+import {userService} from "../../services";
 
 const Users = () => {
     const [users, setUsers] = useState([]);
+
     useEffect(()=>{
-userServise.getAll().then(({data})=>setUsers(data))
+userService.getAll().then(({data})=>setUsers(data))
     }, [])
     return (
+
         <div>
-            <UserForm/>
+            <div> <UserForm setUsers={setUsers}/></div>
             {users.map(user=><User key={user.id} user={user}/>)}
         </div>
     );
