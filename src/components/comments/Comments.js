@@ -2,13 +2,14 @@ import React, {useState} from 'react';
 
 import Comment from "../comment/Comment";
 import {Outlet} from "react-router-dom";
+import {PostsOfComment} from "../postsOfComment/PostsOfComment";
 
 
 const Comments = () => {
-    let [comments, setComments]= useState([]);
+    let [comments, setComments] = useState([]);
     fetch('https://jsonplaceholder.typicode.com/comments')
         .then(value => value.json())
-        .then(value=>{
+        .then(value => {
             setComments(value);
         });
     return (
@@ -17,7 +18,7 @@ const Comments = () => {
             <Outlet/>
             <h3>Comments</h3>
 
-            {comments.map((comment, index)=><Comment item={comment} key={index}/>)}
+            {comments.map((comment, index) => <Comment item={comment} key={index}/>)}
         </div>
     );
 };
