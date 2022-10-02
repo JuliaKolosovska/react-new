@@ -1,6 +1,9 @@
-import './App.css';
 import {useReducer} from "react";
+
+
+import './App.css';
 import {useForm} from "react-hook-form";
+
 
 const {register, handleSubmit} = useForm();
 const init = (initialValue) => {
