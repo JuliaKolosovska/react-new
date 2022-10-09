@@ -1,8 +1,12 @@
 import React from 'react';
 
+import {SingleUserComponent} from "../components";
+
 const SingleUserPage = () => {
     return (
-        <div>SingleUserPage</div>
+        <div>
+            <SingleUserComponent/>
+        </div>
     );
 };
 

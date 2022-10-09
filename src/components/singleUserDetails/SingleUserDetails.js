@@ -1,11 +1,9 @@
-import React from 'react';
+const SingleUserDetails = ({user}) => {
 
-const SingleUserDetails = () => {
     return (
         <div>
-            SingleUserDetails
+            <div>{user.name}</div>
         </div>
-    );
-};
-
+    )
+}
 export {SingleUserDetails};

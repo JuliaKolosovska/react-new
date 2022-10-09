@@ -1,11 +1,9 @@
-import React from 'react';
+const Comment = ({comment}) => {
 
-const Comment = () => {
     return (
         <div>
-            Comment
+            {comment.id} -- {comment.name}
         </div>
-    );
-};
-
+    )
+}
 export {Comment};
